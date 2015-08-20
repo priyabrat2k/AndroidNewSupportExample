@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/animalsGroup">
+        <item
+            android:id="@+id/id_lion"
+            android:title="Lion" />
+        <item
+            android:id="@+id/id_cat"
+            android:title="Cat" />
+        <item
+            android:id="@+id/id_dog"
+            android:title="Dog" />
+        <item
+            android:id="@+id/id_rat"
+            android:title="Rat" />
+    </group>
+
+    <group
+        android:id="@+id/id_fruits">
+        <item
+            android:id="@+id/id_apple"
+            android:title="Apple" />
+        <item
+            android:id="@+id/id_orange"
+            android:title="Orange" />
+        <item
+            android:id="@+id/id_grapes"
+            android:title="Grapes" />
+    </group>
+</menu>
