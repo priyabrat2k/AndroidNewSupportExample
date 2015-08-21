@@ -28,6 +28,10 @@
             android:name=".SnackBarActivity"
             android:label="@string/title_activity_snack_bar" >
         </activity>
+        <activity
+            android:name=".CoordinatorLayoutActivity"
+            android:label="@string/title_activity_coordinator_layout" >
+        </activity>
     </application>
 
 </manifest>

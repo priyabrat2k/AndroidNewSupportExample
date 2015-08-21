@@ -1,16 +1,26 @@
 package com.appifiedtech.androidnewsupportexample;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
-public class SnackBarActivity extends AppCompatActivity {
+public class SnackBarActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private Button btnPress;
+    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_snack_bar);
+        textView = (TextView) findViewById(R.id.textView2);
+        btnPress = (Button) findViewById(R.id.btnPress);
+        btnPress.setOnClickListener(this);
     }
 
     @Override
@@ -34,4 +44,25 @@ public class SnackBarActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onClick(View v) {
+        if (v.getId() == R.id.btnPress) {
+            textView.setText("Pressed");
+            //Snackbar.make(v,"I am SnackBar 1",Snackbar.LENGTH_LONG).show();
+            /*Snackbar.make(v, "I am SnackBar 2", Snackbar.LENGTH_LONG).setAction("Undo", new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    textView.setText("Unpressed");
+                }
+            }).show();*/
+            Snackbar.make(v, "I am SnackBar 3", Snackbar.LENGTH_LONG).setAction("Undo",onClickListener).show();
+        }
+    }
+    View.OnClickListener onClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            textView.setText("Unpressed");
+        }
+    };
 }
