@@ -18,19 +18,23 @@
         </activity>
         <activity
             android:name=".NavigationViewActivity"
-            android:label="@string/title_activity_navigation_view" >
-        </activity>
+            android:label="@string/title_activity_navigation_view" />
         <activity
             android:name=".TextInputLayoutActivity"
-            android:label="@string/title_activity_launcher" >
-        </activity>
+            android:label="@string/title_activity_launcher" />
         <activity
             android:name=".SnackBarActivity"
-            android:label="@string/title_activity_snack_bar" >
-        </activity>
+            android:label="@string/title_activity_snack_bar" />
         <activity
             android:name=".CoordinatorLayoutActivity"
-            android:label="@string/title_activity_coordinator_layout" >
+            android:label="@string/title_activity_coordinator_layout" />
+        <activity
+            android:name=".FloatingActionButtonActivity"
+            android:label="@string/title_activity_floating_action_button" >
+        </activity>
+        <activity
+            android:name=".CollapsingToolbarsActivity"
+            android:label="@string/title_activity_collapsing_toolbars" >
         </activity>
     </application>
 

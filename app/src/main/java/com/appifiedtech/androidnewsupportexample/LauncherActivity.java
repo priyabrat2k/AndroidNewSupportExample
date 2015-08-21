@@ -48,4 +48,12 @@ public class LauncherActivity extends AppCompatActivity {
     public void goSnackbarActivity(View view) {
         startActivity(new Intent(getApplicationContext(),SnackBarActivity.class));
     }
+
+    public void goToolBarScrollingActivity(View view) {
+        startActivity(new Intent(getApplicationContext(),FloatingActionButtonActivity.class));
+    }
+
+    public void goFloatingButtonActivity(View view) {
+        startActivity(new Intent(getApplicationContext(),FloatingActionButtonActivity.class));
+    }
 }
